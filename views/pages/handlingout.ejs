@@ -1,0 +1,236 @@
+<div id="title-report" class="el-hide"><%- locales.outbound.title %></div>
+<div class="box box-warning">
+    <div class="box-header with-border row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="col-lg-12 text-center"><h1><%- locales.title_header %></h1></div>
+
+            <div class="col-lg-12 text-center"><h4>PT. CKB LOGISTICS</h4></div>
+            
+
+            <br /> <br />
+            <div class="col-lg-12">
+                <div id="dvAlert" class=""></div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dateFrom">Location</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i id="iLoc" class="fa fa-hand-o-up"></i>
+                                </div>
+                                <select type="text" class="form-control select2" id="txtLocID" style="width:100%" autocomplete="off">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dateTo">Customer</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i id="iCust" class="fa fa fa-hand-o-up"></i>
+                                </div>
+                                <select type="text" class="form-control select2" id="txtCustID" style="width:100%" autocomplete="off">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Generate data based on:</legend>
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="opsTypeDate" value="BCDoc" checked="true">
+                                            BC Document Dates
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="opsTypeDate" value="OutDoc">
+                                            Outbound Dates
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dateFrom">From</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="dateFrom" value="<%= cutoffdate %>" autocomplete="off" onkeydown="return false;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dateTo">To</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="dateTo" autocomplete="off" onkeydown="return false;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="docType"><%- locales.outbound.document_type %></label %>>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-hand-o-up"></i>
+                                </div>
+                                <select class="form-control pull-right" id="docType" value="" autocomplete="off" onkeydown="return false;">
+                                    <option value="all">All</option>
+                                    <option value="28">BC 2.8</option>
+                                    <option value="27">BC 2.7 (In/Out)</option>
+                                    <option value="41">BC 4.1</option>
+                                    <option value="P3BET">P3BET</option>
+                                    <option value="33">BC 3.3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <button id="btnSearch" type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="box-body row">
+        <div class="col-lg-12 text-center"><h3 id="title-full"><%- locales.outbound.title + " " + locales.title_header_ucfirst %></h3></div>
+        <div class="col-lg-12 text-center" id="dvPeriod"></div>
+        <div class="col-lg-12">
+            <div>
+                <div class="form-group">
+                    <button id="ExportReporttoExcel" class="btn btn-success"><i class="fa fa-file-excel-o"></i> Export Summary</button>
+                    <button id="ExportReporttoExcelDtl" class="btn btn-warning"><i class="fa fa-file-excel-o"></i> Export Detail</button>
+                </div>
+                <div id="dvTable" class="form-group" style="max-width:100%;overflow:auto">
+                    <table id="tblReport" class="table table-responsive table-bordered">
+                        <thead class="text-bold">
+                            <tr>
+                                <th class="text-bold info" style="vertical-align:middle;">No</th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.customs_doc_type %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.customs_registration_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.customs_doc_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.customs_doc_date %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.wms_outbound_order_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.dispatch_date %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.inbound_customs_reg_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.inbound_customs_doc_date %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.consignee %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.container_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.item_code %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.item_description %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.product_serial_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.product_batch_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.qty %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.uom1 %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.currency %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.item_price %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.weight %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.uom2 %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.volume %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.uom3 %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.customer_name %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.warehouse_name %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.created_by %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.created_at %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.modified_by %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.outbound.detail_outbound.modified_at %></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbReport">
+                            <tr id="trNoRecord">
+                                <td colspan="27" class="text-center"><small>~ Data not found ~</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table-hide" id="table-header-summary">
+        <tr bgcolor='#87AFC6'>
+            <td>No</td>
+            <th><%- locales.outbound.summary_outbound.customs_doc_type %></th>
+            <th><%- locales.outbound.summary_outbound.customs_registration_no %></th>
+            <th><%- locales.outbound.summary_outbound.customs_doc_no %></th>
+            <th><%- locales.outbound.summary_outbound.customs_doc_date %></th>
+            <th><%- locales.outbound.summary_outbound.wms_outbound_order_no %></th>
+            <th><%- locales.outbound.summary_outbound.dispatch_date %></th>
+            <th><%- locales.outbound.summary_outbound.inbound_customs_registration_no %></th>
+            <th><%- locales.outbound.summary_outbound.inbound_customs_doc_date %></th>
+            <th><%- locales.outbound.summary_outbound.consignee %></th>
+            <th><%- locales.outbound.summary_outbound.container_no %></th>
+            <th><%- locales.outbound.summary_outbound.item_code %></th>
+            <th><%- locales.outbound.summary_outbound.item_description %></th>
+            <th><%- locales.outbound.summary_outbound.product_batch_no %></th>
+            <th><%- locales.outbound.summary_outbound.qty %></th>
+            <th><%- locales.outbound.summary_outbound.uom1 %></th>
+            <th><%- locales.outbound.summary_outbound.currency %></th>
+            <th><%- locales.outbound.summary_outbound.item_price %></th>
+            <th><%- locales.outbound.summary_outbound.weight %></th>
+            <th><%- locales.outbound.summary_outbound.uom2 %></th>
+            <th><%- locales.outbound.summary_outbound.volume %></th>
+            <th><%- locales.outbound.summary_outbound.uom3 %></th>
+            <th><%- locales.outbound.summary_outbound.customer_name %></th>
+            <th><%- locales.outbound.summary_outbound.warehouse_name %></th>
+        </tr>
+    </table>
+    <table class="table-hide" id="table-header-detail">
+        <tr bgcolor='#87AFC6'>
+            <td>No</td>
+            <th><%- locales.outbound.detail_outbound.customs_doc_type %></th>
+            <th><%- locales.outbound.detail_outbound.customs_registration_no %></th>
+            <th><%- locales.outbound.detail_outbound.customs_doc_no %></th>
+            <th><%- locales.outbound.detail_outbound.customs_doc_date %></th>
+            <th><%- locales.outbound.detail_outbound.wms_outbound_order_no %></th>
+            <th><%- locales.outbound.detail_outbound.dispatch_date %></th>
+            <th><%- locales.outbound.detail_outbound.inbound_customs_reg_no %></th>
+            <th><%- locales.outbound.detail_outbound.inbound_customs_doc_date %></th>
+            <th><%- locales.outbound.detail_outbound.consignee %></th>
+            <th><%- locales.outbound.detail_outbound.container_no %></th>
+            <th><%- locales.outbound.detail_outbound.item_code %></th>
+            <th><%- locales.outbound.detail_outbound.item_description %></th>
+            <th><%- locales.outbound.detail_outbound.product_serial_no %></th>
+            <th><%- locales.outbound.detail_outbound.product_batch_no %></th>
+            <th><%- locales.outbound.detail_outbound.qty %></th>
+            <th><%- locales.outbound.detail_outbound.uom1 %></th>
+            <th><%- locales.outbound.detail_outbound.currency %></th>
+            <th><%- locales.outbound.detail_outbound.item_price %></th>
+            <th><%- locales.outbound.detail_outbound.weight %></th>
+            <th><%- locales.outbound.detail_outbound.uom2 %></th>
+            <th><%- locales.outbound.detail_outbound.volume %></th>
+            <th><%- locales.outbound.detail_outbound.uom3 %></th>
+            <th><%- locales.outbound.detail_outbound.customer_name %></th>
+            <th><%- locales.outbound.detail_outbound.warehouse_name %></th>
+        </tr>
+    </table>
+</div>
+
+<script src="/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="/dist/js/rpthandlingout.js"></script>

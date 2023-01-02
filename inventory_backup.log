@@ -1,0 +1,419 @@
+[2023-01-02T13:54:10.934] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCCW
+[2023-01-02T13:54:10.935] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T13:54:32.271] [INFO] inventory - menampilkan baris 110
+[2023-01-02T13:54:32.272] [INFO] inventory - Processing to save data 110
+[2023-01-02T13:54:33.623] [INFO] inventory - End of process save data
+[2023-01-02T14:01:58.244] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PTWHS dan location : JKT01BLCCW
+[2023-01-02T14:01:58.245] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76PTWHS','2022-12-06'
+[2023-01-02T14:07:01.527] [INFO] inventory - menampilkan baris 71058
+[2023-01-02T14:07:02.349] [INFO] inventory - Processing to save data 71058
+[2023-01-02T14:18:24.333] [INFO] inventory - End of process save data[2023-01-02T14:53:04.970] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PTWHS dan location : JKT01BLCCW =============
+[2023-01-02T14:53:05.672] [INFO] inventory - Data sudah ada
+[2023-01-02T14:53:05.673] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T14:53:06.249] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T14:53:07.765] [INFO] inventory - menampilkan baris 0
+[2023-01-02T14:53:07.765] [ERROR] inventory - DATA KOSONG
+[2023-01-02T14:53:07.766] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T14:53:08.332] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T14:53:11.229] [INFO] inventory - menampilkan baris 4
+[2023-01-02T14:53:11.230] [INFO] inventory - Processing to save data 4
+[2023-01-02T14:53:12.575] [INFO] inventory - success save data
+[2023-01-02T14:53:12.576] [INFO] inventory - =========== End of process save data ========
+[2023-01-02T14:53:12.576] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PTWHS dan location : JKT01BLCOY =============
+[2023-01-02T14:53:13.734] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76PTWHS','2022-12-06'
+[2023-01-02T14:53:20.378] [INFO] inventory - menampilkan baris 0
+[2023-01-02T14:53:20.378] [ERROR] inventory - DATA KOSONG
+[2023-01-02T14:53:20.378] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T14:53:21.643] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T14:53:27.779] [INFO] inventory - menampilkan baris 227
+[2023-01-02T14:53:27.780] [INFO] inventory - Processing to save data 227
+[2023-01-02T14:53:29.890] [ERROR] inventory - connection interrupt
+[2023-01-02T14:53:29.891] [ERROR] inventory - RequestError: Unclosed quotation mark after the character string ' 10.007D3) WITH ATT/ACC','GRPL/22/00009227','10031601907920221102081698','005528','-','','0101YA0101','Nov  8 2022 12:00AM','28,2'.
+    at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+    at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+    at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+    at Readable.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at next (node:internal/streams/from:98:31) {
+  code: 'EREQUEST',
+  originalError: Error: Unclosed quotation mark after the character string ' 10.007D3) WITH ATT/ACC','GRPL/22/00009227','10031601907920221102081698','005528','-','','0101YA0101','Nov  8 2022 12:00AM','28,2'.
+      at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:382:19)
+      at Connection.emit (node:events:513:28)
+      at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+      at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+      at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+      at Readable.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at next (node:internal/streams/from:98:31) {
+    info: ErrorMessageToken {
+      name: 'ERROR',
+      handlerName: 'onErrorMessage',
+      number: 105,
+      state: 1,
+      class: 15,
+      message: "Unclosed quotation mark after the character string ' 10.007D3) WITH ATT/ACC','GRPL/22/00009227','10031601907920221102081698','005528','-','','0101YA0101','Nov  8 2022 12:00AM','28,2'.",
+      serverName: 'CKBAZSQLM101',
+      procName: '',
+      lineNumber: 413
+    }
+  },
+  number: 105,
+  lineNumber: 413,
+  state: 1,
+  class: 15,
+  serverName: 'CKBAZSQLM101',
+  procName: '',
+  precedingErrors: [
+    RequestError: Incorrect syntax near '8'.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 102,
+      lineNumber: 207,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: The identifier that starts with 'STICK BASIC TOOL) DKM','GRPL/22/00005097','10031601907920220527081332','002807','-','','0101YA0101','Jun  8 2022 12:00AM','3,873' is too long. Maximum length is 128.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 103,
+      lineNumber: 207,
+      state: 4,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 271,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: The identifier that starts with '6.93YD3 WB','GRPL/22/00007783','10031601907920220901081528','004612','-','','0101YA0101','Sep 14 2022 12:00AM','3,021.52','USD',' is too long. Maximum length is 128.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 103,
+      lineNumber: 279,
+      state: 4,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 287,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 289,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 291,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: The label 'M11C352_001' has already been declared. Label names must be unique within a query batch or stored procedure.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 132,
+      lineNumber: 355,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: The label 'M11C352_001' has already been declared. Label names must be unique within a query batch or stored procedure.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 132,
+      lineNumber: 357,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 381,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 383,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 385,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 387,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 389,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 397,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 319,
+      lineNumber: 399,
+      state: 1,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    },
+    RequestError: The identifier that starts with ' 10.007D3) WITH ATT/ACC','GRPL/22/00009227','10031601907920221102081698','005528','-','','0101YA0101','Nov  8 2022 12:00AM','28,' is too long. Maximum length is 128.
+        at handleError (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/mssql/lib/tedious/request.js:384:15)
+        at Connection.emit (node:events:513:28)
+        at Connection.emit (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/connection.js:1040:18)
+        at RequestTokenHandler.onErrorMessage (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/handler.js:365:21)
+        at Readable.<anonymous> (/Users/arifpc/Documents/ckb/plb/node-plb/node_modules/tedious/lib/token/token-stream-parser.js:26:33)
+        at Readable.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at Readable.push (node:internal/streams/readable:234:10)
+        at next (node:internal/streams/from:98:31) {
+      code: 'EREQUEST',
+      originalError: [Error],
+      number: 103,
+      lineNumber: 413,
+      state: 4,
+      class: 15,
+      serverName: 'CKBAZSQLM101',
+      procName: ''
+    }
+  ]
+}
+[2023-01-02T14:53:29.903] [INFO] inventory - =========== End of process save data ========
+[2023-01-02T14:53:29.903] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T14:53:30.680] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T14:53:34.634] [INFO] inventory - menampilkan baris 0
+[2023-01-02T14:53:34.634] [ERROR] inventory - DATA KOSONG

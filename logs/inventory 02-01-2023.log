@@ -1,0 +1,71 @@
+[2023-01-02T15:38:21.477] [INFO] inventory - 
+[2023-01-02T15:38:21.480] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:38:22.040] [INFO] inventory - Data sudah ada
+[2023-01-02T15:38:22.041] [INFO] inventory - 
+[2023-01-02T15:38:22.041] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:38:22.651] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T15:38:26.731] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:38:26.731] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+[2023-01-02T15:38:26.732] [INFO] inventory - 
+[2023-01-02T15:38:26.733] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:38:27.258] [INFO] inventory - Data sudah ada
+[2023-01-02T15:38:27.259] [INFO] inventory - 
+[2023-01-02T15:38:27.259] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:38:27.752] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T15:38:30.295] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:38:30.295] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+[2023-01-02T15:38:30.296] [INFO] inventory - 
+[2023-01-02T15:38:30.296] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:38:30.807] [INFO] inventory - Data sudah ada
+[2023-01-02T15:38:30.807] [INFO] inventory - 
+[2023-01-02T15:38:30.807] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:38:31.306] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T15:38:34.556] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:38:34.557] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+[2023-01-02T15:39:11.098] [INFO] inventory - 
+[2023-01-02T15:39:11.100] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:39:11.834] [INFO] inventory - Data sudah ada
+[2023-01-02T15:39:11.834] [INFO] inventory - 
+[2023-01-02T15:39:11.834] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:39:12.442] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T15:39:14.463] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:39:14.464] [ERROR] inventory - DATA DARI SP INVENTORY KOSONG
+[2023-01-02T15:39:14.464] [INFO] inventory - 
+[2023-01-02T15:39:14.465] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:39:15.025] [INFO] inventory - Data sudah ada
+[2023-01-02T15:39:15.026] [INFO] inventory - 
+[2023-01-02T15:39:15.026] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:39:15.564] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T15:39:18.303] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:39:18.303] [ERROR] inventory - DATA DARI SP INVENTORY KOSONG
+[2023-01-02T15:39:18.304] [INFO] inventory - 
+[2023-01-02T15:39:18.304] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:39:18.797] [INFO] inventory - Data sudah ada
+[2023-01-02T15:39:18.798] [INFO] inventory - 
+[2023-01-02T15:39:18.798] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:39:19.317] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T15:39:22.991] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:39:22.992] [ERROR] inventory - DATA DARI SP INVENTORY KOSONG
+[2023-01-02T15:41:03.343] [INFO] inventory - 
+[2023-01-02T15:41:03.346] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:41:03.943] [INFO] inventory - Data sudah ada
+[2023-01-02T15:41:03.944] [INFO] inventory - 
+[2023-01-02T15:41:03.944] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:41:04.497] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T15:41:06.269] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:41:06.270] [ERROR] inventory - DATA DARI SP INVENTORY KOSONG
+[2023-01-02T15:41:06.270] [INFO] inventory - 
+[2023-01-02T15:41:06.271] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:41:06.834] [INFO] inventory - Data sudah ada
+[2023-01-02T15:41:06.835] [INFO] inventory - 
+[2023-01-02T15:41:06.835] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:41:07.392] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T15:41:10.236] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:41:10.236] [ERROR] inventory - DATA DARI SP INVENTORY KOSONG
+[2023-01-02T15:41:10.237] [INFO] inventory - 
+[2023-01-02T15:41:10.237] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:41:10.727] [INFO] inventory - Data sudah ada
+[2023-01-02T15:41:10.728] [INFO] inventory - 
+[2023-01-02T15:41:10.728] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:41:11.262] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T15:41:13.804] [INFO] inventory - menampilkan baris 0

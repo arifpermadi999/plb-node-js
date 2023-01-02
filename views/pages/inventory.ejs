@@ -1,0 +1,146 @@
+
+<div id="title-report" class="el-hide"><%- locales.inventory.title %></div>
+<div class="box box-warning">
+    <div class="box-header with-border row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="col-lg-12 text-center"><h1><%- locales.title_header %></h1></div>
+
+            <div class="col-lg-12 text-center"><h4><%- company %></h4></div>
+            <div class="col-lg-12">
+                <div id="dvAlert" class=""></div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dateFrom">Location</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i id="iLoc" class="fa fa-hand-o-up"></i>
+                                </div>
+                                <select type="text" class="form-control select2" id="txtLocID" style="width:100%" autocomplete="off"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dateTo">Customer</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i id="iCust" class="fa fa fa-hand-o-up"></i>
+                                </div>
+                                <select type="text" class="form-control select2" id="txtCustID" style="width:100%" autocomplete="off"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="dateFrom">From</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="dateFrom" onkeydown="return false;" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden">
+                        <div class="form-group">
+                            <label for="dateTo">To</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="dateTo" onkeydown="return false;" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="btnSearch" type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="box-body row">
+        <div class="col-lg-12 text-center"><h3 id="title-full"><%- locales.inventory.title + " " + locales.title_header_ucfirst %></h3></div>
+        <div class="col-lg-12 text-center" id="dvPeriod"></div>
+        <div class="col-lg-12">
+            <div>
+                <div class="form-group">
+                    <button id="ExportReporttoExcel" class="btn btn-success"><i class="fa fa-file-excel-o"></i> Export Summary</button>
+                    <button id="ExportReporttoExcelDtl" class="btn btn-warning"><i class="fa fa-file-excel-o"></i> Export Detail</button>
+                </div>
+                <div id="dvTable" class="form-group" style="max-width:100%;max-height:500px;overflow:auto">
+                    <table id="tblReport" class="table table-responsive table-bordered">
+                        <thead class="text-bold">
+                            <tr>
+                                <th class="text-bold info" style="vertical-align:middle;">No</th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.warehouse_code %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.customer_name %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.item_code %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.item_description %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.final_closing_stock %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.bin %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.primary_reff_doc_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.customs_reg_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.customs_doc_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.serial_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.batch_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.receipt_date %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.price %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.currency %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.weight %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.uom1 %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.volume %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.uom2 %></th>
+
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.po_number %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.case_no %></th>
+                                <th class="text-bold info" style="vertical-align:middle;"><%- locales.inventory.summary_inventory.remarks %></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbReport">
+                            <tr id="trNoRecord">
+                                <td colspan="31" class="text-center"><small>~ Data not found ~</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table-hide" id="table-header-summary">
+        <tr bgcolor='#87AFC6'>
+            <td>No</td>
+            <th><%- locales.inventory.summary_inventory.warehouse_code %></th>
+            <th><%- locales.inventory.summary_inventory.customer_name %></th>
+            <th><%- locales.inventory.summary_inventory.item_code %></th>
+            <th><%- locales.inventory.summary_inventory.item_description %></th>
+            <th><%- locales.inventory.summary_inventory.final_closing_stock %></th>
+            <th><%- locales.inventory.summary_inventory.bin %></th>
+            <th><%- locales.inventory.summary_inventory.primary_reff_doc_no %></th>
+            <th><%- locales.inventory.summary_inventory.customs_reg_no %></th>
+            <th><%- locales.inventory.summary_inventory.customs_doc_no %></th>
+            <th><%- locales.inventory.summary_inventory.batch_no %></th>
+            <th><%- locales.inventory.summary_inventory.receipt_date %></th>
+            <th><%- locales.inventory.summary_inventory.price %></th>
+            <th><%- locales.inventory.summary_inventory.currency %></th>
+            <th><%- locales.inventory.summary_inventory.weight %></th>
+            <th><%- locales.inventory.summary_inventory.uom1 %></th>
+            <th><%- locales.inventory.summary_inventory.volume %></th>
+            <th><%- locales.inventory.summary_inventory.uom2 %></th>
+
+            <th ><%- locales.inventory.summary_inventory.po_number %></th>
+            <th ><%- locales.inventory.summary_inventory.case_no %></th>
+            <th ><%- locales.inventory.summary_inventory.remarks %></th>
+        </tr>
+    </table>
+
+</div>
+
+<script src="/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="/dist/js/rptinventoryblc.js"></script>
+<script src="/exporttofile/excel.js"></script>

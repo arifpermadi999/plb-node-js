@@ -1,0 +1,43 @@
+[2023-01-02T14:01:58.244] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PTWHS dan location : JKT01BLCCW
+[2023-01-02T14:01:58.245] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76PTWHS','2022-12-06'
+[2023-01-02T14:07:01.527] [INFO] inventory - menampilkan baris 71058
+[2023-01-02T14:07:02.349] [INFO] inventory - Processing to save data 71058
+[2023-01-02T14:18:24.333] [INFO] inventory - End of process save Data
+[2023-01-02T15:26:27.304] [INFO] inventory - 
+[2023-01-02T15:26:27.305] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:26:29.040] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:31.352] [INFO] inventory - menampilkan baris 110
+[2023-01-02T15:26:31.362] [INFO] inventory - Processing to save data 110
+[2023-01-02T15:26:32.679] [INFO] inventory - success save data
+[2023-01-02T15:26:32.679] [INFO] inventory - =========== End of process save data ========
+[2023-01-02T15:26:32.680] [INFO] inventory - 
+[2023-01-02T15:26:32.680] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:26:33.204] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:34.979] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:26:34.980] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+[2023-01-02T15:26:34.980] [INFO] inventory - 
+[2023-01-02T15:26:34.980] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCCW =============
+[2023-01-02T15:26:35.624] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCCW','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:37.596] [INFO] inventory - menampilkan baris 4
+[2023-01-02T15:26:37.597] [INFO] inventory - Processing to save data 4
+[2023-01-02T15:26:38.516] [INFO] inventory - success save data
+[2023-01-02T15:26:38.517] [INFO] inventory - =========== End of process save data ========
+[2023-01-02T15:26:38.517] [INFO] inventory - 
+[2023-01-02T15:26:38.517] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76PSWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:26:39.047] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76PSWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:41.751] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:26:41.751] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+[2023-01-02T15:26:41.752] [INFO] inventory - 
+[2023-01-02T15:26:41.752] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76MKWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:26:42.421] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76MKWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:45.890] [INFO] inventory - menampilkan baris 225
+[2023-01-02T15:26:45.915] [INFO] inventory - Processing to save data 225
+[2023-01-02T15:26:48.914] [INFO] inventory - success save data
+[2023-01-02T15:26:48.914] [INFO] inventory - =========== End of process save data ========
+[2023-01-02T15:26:48.914] [INFO] inventory - 
+[2023-01-02T15:26:48.914] [INFO] inventory - ======== Mengambil Data dari lokasi : WH76DAWHSPDPLB dan location : JKT01BLCOY =============
+[2023-01-02T15:26:49.630] [INFO] inventory - SP : exec sp_apollo_inventorystock_new 'JKT01BLCOY','WH76DAWHSPDPLB','2022-12-06'
+[2023-01-02T15:26:52.501] [INFO] inventory - menampilkan baris 0
+[2023-01-02T15:26:52.502] [ERROR] inventory - DATA DARI INVENTORY KOSONG
+
+
